@@ -18,17 +18,17 @@ const QuizSet = (props) => {
 
     const initialState = (name) => {
         switch (name) {
-            case 'depression':
+            case 'Depression':
                 return depressionQuestions
-            case 'anxiety':
+            case 'Anxiety':
                 return anxietyQuestions
-            case 'ptsd':
+            case 'Ptsd':
                 return ptsdQuestions
-            case 'schizophrenia':
+            case 'Schizophrenia':
                 return schQuestions
-            case 'addiction':
+            case 'Addiction':
                 return addictionQuestions
-            case 'impairment':
+            case 'Impairment':
                 return impairmentQuestions
             default:
                 throw new Error('initalState Error!')
@@ -165,7 +165,7 @@ const QuizSet = (props) => {
 
         <Container className={classes.container}>
             <Typography className={classes.title}>
-                {currentQuizName} quiz
+                {currentQuizName} Quiz
             </Typography>
             <Question currentQuestion={currentQuiz[index]} setCurrentQuestion={setIndex} handleSubmit={handleSubmit}>
             </Question>

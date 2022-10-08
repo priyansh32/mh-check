@@ -18,19 +18,19 @@ const Quiz = (args) => {
 
     let b = []
     if (a[0][1] === 'true') {
-        b.push('depression')
+        b.push('Depression')
     }
     if (a[1][1] === 'true') {
-        b.push('anxiety')
+        b.push('Anxiety')
     }
     if (a[2][1] === 'true') {
-        b.push('ptsd')
+        b.push('Ptsd')
     }
     if (a[3][1] === 'true') {
-        b.push('schizophrenia')
+        b.push('Schizophrenia')
     }
     if (a[4][1] === 'true') {
-        b.push('addiction')
+        b.push('Addiction')
     }
 
     let quizzes = b

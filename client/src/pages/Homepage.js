@@ -113,13 +113,13 @@ function Homepage() {
                 <Grid item xs={12} md={4}>
                     <CardContent className={classes.card}>
                         <Typography className={classes.text} variant='body1'>
-                            Use Mental Health Check to check-in with yourself and how you're feeling.
+                            Use Mental Health Test to test yourself and how you are feeling.
                         </Typography>
                         <Typography className={classes.text} variant='body1'>
-                            Mental Health Check uses questions from mental illness screenings, but with Yes/No questions.
+                            Mental Health Test uses questions framed by psychiatrists, which are Yes/No type of questions.
                         </Typography>
                         <Typography className={classes.text} variant='body1'>
-                            Instead of screening for a diagnosis, Mental Health Check uses those questions to help the user identify their feelings.
+                            Mental Health Test uses the questions to help the user identify their feelings and mental health condition.
                         </Typography>
                     </CardContent>
                 </Grid>
@@ -133,10 +133,10 @@ function Homepage() {
                         />
                         <CardContent className={classes.card}>
                             <Typography className={classes.cardTitle} gutterBottom variant="h5" component="div">
-                                Take the Mental Health Check
+                                Take the Mental Health Test
                             </Typography>
                             <Typography className={classes.cardText}>
-                                Select from our question categories and begin taking your customized mental health check quiz!
+                                Click on "Take the quiz" and begin your mental health test quiz!
                             </Typography>
                         </CardContent>
                         <CardActions className={classes.cardButtons}>

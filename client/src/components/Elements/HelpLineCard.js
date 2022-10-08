@@ -40,23 +40,7 @@ export default function HelpCard() {
                     Suicide Prevention Hotline
                 </Typography>
                 <Typography className={classes.text}>
-                    <LocalPhoneIcon className={classes.icon} />800-273-8255
-                </Typography>
-            </Card>
-            <Card className={classes.card}>
-                <Typography className={classes.title}>
-                    National Alliance For Mental Health Hotline
-                </Typography>
-                <Typography className={classes.text}>
-                    <LocalPhoneIcon className={classes.icon} />800-950-NAMI (6264)
-                </Typography>
-            </Card>
-            <Card className={classes.card}>
-                <Typography className={classes.title}>
-                    Substance Abuse and Mental Health Services Agency (SAMHSA)
-                </Typography>
-                <Typography className={classes.text}>
-                    <LocalPhoneIcon className={classes.icon} />800-662-HELP (4357)
+                    <LocalPhoneIcon className={classes.icon} />+91 9152987821
                 </Typography>
             </Card>
         </>

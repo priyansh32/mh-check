@@ -57,21 +57,21 @@ const QuizSelectForm = (props) => {
                                 <Checkbox checked={state.depression} onChange={handleChange} name="depression"
                                     sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }} />
                             }
-                            label="depression"
+                            label="Depression"
                         />
                         <FormControlLabel
                             control={
                                 <Checkbox checked={state.anxiety} onChange={handleChange} name="anxiety"
                                     sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }} />
                             }
-                            label="anxiety"
+                            label="Anxiety"
                         />
                         <FormControlLabel
                             control={
                                 <Checkbox checked={state.ptsd} onChange={handleChange} name="ptsd"
                                     sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }} />
                             }
-                            label={"ptsd"}
+                            label={"Ptsd"}
                             sx={{ fontSize: 34 }}
                         />
                         <FormControlLabel
@@ -79,14 +79,14 @@ const QuizSelectForm = (props) => {
                                 <Checkbox checked={state.sch} onChange={handleChange} name="sch"
                                     sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }} />
                             }
-                            label="schizophrenia"
+                            label="Schizophrenia"
                         />
                         <FormControlLabel
                             control={
                                 <Checkbox checked={state.addiction} onChange={handleChange} name="addiction"
                                     sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }} />
                             }
-                            label="addiction"
+                            label="Addiction"
                         />
 
                     </FormGroup>
