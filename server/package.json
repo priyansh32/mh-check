@@ -11,9 +11,9 @@
   "author": "nitrotap",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nitrotap/mental-health-check/issues"
+    "url": "https://github.com/priyansh32/mh-check/issues"
   },
-  "homepage": "https://github.com/nitrotap/mental-health-check#readme",
+  "homepage": "https://github.com/priyansh32/mh-check#readme",
   "dependencies": {
     "@faker-js/faker": "^6.3.1",
     "apollo-server-express": "^3.7.0",
