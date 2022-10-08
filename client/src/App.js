@@ -162,15 +162,6 @@ export default function App() {
     },
   ];
 
-  const listTwo = [
-
-    {
-      text: 'Github',
-      icon: <GitHubIcon />,
-      link: 'https://github.com/nitrotap/mental-health-check',
-    }
-  ];
-
   const listThree = [
     {
       text: 'Signup',
@@ -238,22 +229,6 @@ export default function App() {
                           </ListItemButton>
                         </ListItem>
                       </Link>
-                    )
-                  })}
-                </List>
-                <Divider variant='middle' color='white' />
-                <List>
-                  {listTwo.map((item, index) => {
-                    const { text, icon, link } = item;
-                    return (
-                      <a href={link} key={index} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
-                        <ListItem key={text} disablePadding>
-                          <ListItemButton >
-                            {icon && <ListItemIcon sx={{ color: 'white' }}>{icon}</ListItemIcon>}
-                            <ListItemText sx={{ color: 'white' }} primary={text} />
-                          </ListItemButton>
-                        </ListItem>
-                      </a>
                     )
                   })}
                 </List>
