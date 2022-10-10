@@ -22,7 +22,6 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
-import GitHubIcon from '@mui/icons-material/GitHub';
 
 import CreateIcon from '@mui/icons-material/Create';
 import LoginIcon from '@mui/icons-material/Login';
@@ -193,7 +192,7 @@ export default function App() {
                   <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" noWrap component="div">
-                  Mental Health Check
+                  Mental Health Test
                 </Typography>
               </Toolbar>
             </AppBar>

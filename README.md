@@ -1,4 +1,4 @@
-# Mental Health Check
+# Mental Health Test
 
 ## Description
 

@@ -4,7 +4,7 @@
   "engines": {
     "node": "16.17.1"
   },
-  "description": "mental health check",
+  "description": "Mental Health Test",
   "main": "server/server.js",
   "scripts": {
     "start": "node -r dotenv/config server/server.js",
