@@ -110,7 +110,6 @@ const QuizSet = (props) => {
 
     const useStyles = makeStyles((theme) => ({
         container: {
-            backgroundColor: '#18344A',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -121,8 +120,8 @@ const QuizSet = (props) => {
         },
         title: {
             fontSize: '4rem',
+            fontWeight: '600',
             textAlign: 'center',
-            color: 'white',
             paddingBottom: theme.spacing(3),
             [theme.breakpoints.down('md')]: {
                 fontSize: '2rem',
@@ -131,7 +130,6 @@ const QuizSet = (props) => {
         text: {
             fontSize: '1.3rem',
             textAlign: 'center',
-            color: '#f5f5f5',
             paddingBottom: theme.spacing(3),
             [theme.breakpoints.down('md')]: {
                 fontSize: '1rem',
@@ -143,7 +141,6 @@ const QuizSet = (props) => {
             flexDirection: 'column',
         },
         cardTitle: {
-            color: '#f5f5f5',
             fontSize: '2.5rem',
             textAlign: 'center',
             [theme.breakpoints.down('md')]: {

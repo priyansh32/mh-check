@@ -25,7 +25,7 @@ import Copyright from '../components/Elements/Copyright';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: '#18344A',
+    
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',

@@ -24,7 +24,6 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: '#18344A',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',

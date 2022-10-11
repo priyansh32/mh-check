@@ -6,5 +6,11 @@ export const theme = createTheme({
             main: '#255070'
         }
     },
+    typography: {
+        fontFamily: [
+          'Poppins',
+          'sans-serif',
+        ].join(','),
+      },
 
 })

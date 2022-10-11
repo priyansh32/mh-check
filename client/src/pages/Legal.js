@@ -6,7 +6,7 @@ import { Container, Typography, Box } from '@mui/material';
 export default function Legal() {
     // const classes = useStyles();
     return (
-        <Container sx={{ color: 'white', marginTop: '36px', marginBottom: '96px' }}>
+        <Container sx={{ marginTop: '36px', marginBottom: '96px' }}>
             <Box>
                 <Typography variant='h3'>Legal</Typography>
             </Box>

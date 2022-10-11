@@ -14,7 +14,7 @@ import { QUERY_QUIZSET } from "../utils/queries";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: '#18344A',
+    
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
   container2: {
-    backgroundColor: '#18344A',
+    
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
   container3: {
-    backgroundColor: '#18344A',
+    
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-around',
@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: '4rem',
+    fontWeight: '600',
     textAlign: 'center',
     color: 'white',
     paddingBottom: theme.spacing(3),

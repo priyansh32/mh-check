@@ -180,7 +180,7 @@ export default function App() {
         <Router>
           <Box sx={{ display: 'flex', }}>
             <CssBaseline />
-            <AppBar position="fixed" z-index='1400' open={open} sx={{ backgroundColor: '#326B96' }}>
+            <AppBar position="fixed" z-index='1400' open={open} sx={{ backgroundColor: '#06283D' }}>
               <Toolbar>
                 <IconButton
                   color="inherit"
@@ -209,7 +209,7 @@ export default function App() {
               anchor="left"
               open={open}
             >
-              <Box sx={{ backgroundColor: '#d582ff', height: '100%', color: 'white', border: 'none', }}>
+              <Box sx={{ backgroundColor: '#06283D', height: '100vh', color: 'white', border: 'none', }}>
                 <DrawerHeader>
                   <IconButton onClick={handleDrawerClose} sx={{ color: 'white' }}>
                     {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
@@ -262,7 +262,8 @@ export default function App() {
               alignItems: 'center',
               justifyContent: 'center',
               padding: 0,
-              backgroundColor: '#18344A'
+              backgroundColor: '#F5C7A9',
+              color: 'black'
             }}>
               <Routes>
                 <Route path="/" element={<Home />} />

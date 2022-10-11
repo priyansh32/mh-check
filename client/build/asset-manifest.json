@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8b30695.css",
-    "main.js": "/static/js/main.0cab577c.js",
+    "main.css": "/static/css/main.db63e18b.css",
+    "main.js": "/static/js/main.d583496d.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/jumbo2.jpg": "/static/media/jumbo2.f108d1a109eb2dc427e4.jpg",
-    "static/media/jumbo.jpg": "/static/media/jumbo.fd2246bb6917075b5abc.jpg",
+    "static/media/jumbo.jpg": "/static/media/jumbo.9879bf044eea7f84f096.jpg",
     "index.html": "/index.html",
-    "main.d8b30695.css.map": "/static/css/main.d8b30695.css.map",
-    "main.0cab577c.js.map": "/static/js/main.0cab577c.js.map",
+    "main.db63e18b.css.map": "/static/css/main.db63e18b.css.map",
+    "main.d583496d.js.map": "/static/js/main.d583496d.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8b30695.css",
-    "static/js/main.0cab577c.js"
+    "static/css/main.db63e18b.css",
+    "static/js/main.d583496d.js"
   ]
 }

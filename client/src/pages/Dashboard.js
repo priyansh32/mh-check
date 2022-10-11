@@ -11,7 +11,7 @@ import { Typography } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
 	container: {
-		backgroundColor: '#18344A',
+		
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'center',
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		fontSize: '4rem',
+fontWeight: '600',
 		textAlign: 'center',
 		color: 'white',
 		paddingBottom: theme.spacing(3),
