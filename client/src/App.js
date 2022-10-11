@@ -180,7 +180,7 @@ export default function App() {
         <Router>
           <Box sx={{ display: 'flex', }}>
             <CssBaseline />
-            <AppBar position="fixed" z-index='1400' open={open} sx={{ backgroundColor: '#06283D' }}>
+            <AppBar position="fixed" z-index='1400' open={open} sx={{ backgroundColor: '#DD5353' }}>
               <Toolbar>
                 <IconButton
                   color="inherit"
