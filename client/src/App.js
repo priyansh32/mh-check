@@ -209,7 +209,7 @@ export default function App() {
               anchor="left"
               open={open}
             >
-              <Box sx={{ backgroundColor: '#06283D', height: '100vh', color: 'white', border: 'none', }}>
+              <Box sx={{ backgroundColor: '#FB2576', height: '100vh', color: 'white', border: 'none', }}>
                 <DrawerHeader>
                   <IconButton onClick={handleDrawerClose} sx={{ color: 'white' }}>
                     {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
