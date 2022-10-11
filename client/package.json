@@ -1,6 +1,9 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.14.0"
+  },
   "private": true,
   "proxy": "https://3001-priyansh32-mhcheck-pyl0nzsj2ff.ws-us70.gitpod.io/",
   "dependencies": {

@@ -2,7 +2,7 @@
   "name": "mental-health-check",
   "version": "0.1.0",
   "engines": {
-    "node": "16.17.1"
+    "node": "16.14.0"
   },
   "description": "Mental Health Test",
   "main": "server/server.js",
