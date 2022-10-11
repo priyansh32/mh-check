@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-const quizNames = ['anxiety', 'depression', 'ptsd', 'schizophrenia', 'addiction']
+const quizNames = ['anxiety', 'depression', 'PTSD', 'schizophrenia', 'addiction']
 const dateFormat = require('../utils/dateFormat')
 
 //todo add validation to quizTaken/quizAnswer

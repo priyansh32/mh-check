@@ -140,15 +140,15 @@ const Dashboard = () => {
 			}
 		}
 
-		let ptsdCount = 0
-		let ptsdQuizCount = 0
+		let PTSDCount = 0
+		let PTSDQuizCount = 0
 		for (let i = 0; i < user.quizzes.length; i++) {
 			for (let j = 0; j < user.quizzes[i].quizResults.length; j++) {
-				if (user.quizzes[i].quizResults[j].quizAnswer === 'positive for ptsd') {
-					ptsdCount++
-					ptsdQuizCount++
-				} else if (user.quizzes[i].quizResults[j].quizAnswer === 'negative for ptsd') {
-					ptsdQuizCount++
+				if (user.quizzes[i].quizResults[j].quizAnswer === 'positive for PTSD') {
+					PTSDCount++
+					PTSDQuizCount++
+				} else if (user.quizzes[i].quizResults[j].quizAnswer === 'negative for PTSD') {
+					PTSDQuizCount++
 				}
 			}
 		}
@@ -178,8 +178,8 @@ const Dashboard = () => {
 				}
 			}
 		}
-		count = [depCount, anxCount, ptsdCount, schCount, addictionCount]
-		quizCount = [depQuizCount, anxQuizCount, ptsdQuizCount, schQuizCount, addictionQuizCount]
+		count = [depCount, anxCount, PTSDCount, schCount, addictionCount]
+		quizCount = [depQuizCount, anxQuizCount, PTSDQuizCount, schQuizCount, addictionQuizCount]
 	}
 
 	const chartHandler = (len) => {

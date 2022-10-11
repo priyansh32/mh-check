@@ -18,7 +18,7 @@ const QuizSelectForm = (props) => {
     const [state, setState] = useState({
         depression: false,
         anxiety: false,
-        ptsd: false,
+        PTSD: false,
         sch: false,
         addiction: false,
     })
@@ -32,7 +32,7 @@ const QuizSelectForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        window.location.replace(`/quiz/depression=${state.depression}&anxiety=${state.anxiety}&ptsd=${state.ptsd}&sch=${state.sch}&addiction=${state.addiction}`)
+        window.location.replace(`/quiz/depression=${state.depression}&anxiety=${state.anxiety}&PTSD=${state.PTSD}&sch=${state.sch}&addiction=${state.addiction}`)
 
     }
     return (
@@ -68,10 +68,10 @@ const QuizSelectForm = (props) => {
                         />
                         <FormControlLabel
                             control={
-                                <Checkbox checked={state.ptsd} onChange={handleChange} name="ptsd"
+                                <Checkbox checked={state.PTSD} onChange={handleChange} name="PTSD"
                                     sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }} />
                             }
-                            label={"Ptsd"}
+                            label={"PTSD"}
                             sx={{ fontSize: 34 }}
                         />
                         <FormControlLabel
@@ -96,7 +96,7 @@ const QuizSelectForm = (props) => {
                         variant="contained"
                         sx={{ mt: 3, mb: 2 }}
                         onClick={handleSubmit}
-                        disabled={!state.depression && !state.anxiety && !state.ptsd && !state.sch && !state.addiction}
+                        disabled={!state.depression && !state.anxiety && !state.PTSD && !state.sch && !state.addiction}
                     >
                         Start Quiz
                     </Button>

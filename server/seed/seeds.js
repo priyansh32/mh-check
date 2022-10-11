@@ -13,8 +13,8 @@ const possibleNegatives = [
         quizAnswer: 'negative for anxiety'
     },
     {
-        quizTaken: 'ptsd',
-        quizAnswer: 'negative for ptsd'
+        quizTaken: 'PTSD',
+        quizAnswer: 'negative for PTSD'
     },
     {
         quizTaken: 'schizophrenia',
@@ -36,8 +36,8 @@ const possiblePositives = [
         quizAnswer: 'positive for anxiety'
     },
     {
-        quizTaken: 'ptsd',
-        quizAnswer: 'positive for ptsd'
+        quizTaken: 'PTSD',
+        quizAnswer: 'positive for PTSD'
     },
     {
         quizTaken: 'schizophrenia',

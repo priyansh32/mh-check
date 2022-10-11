@@ -24,7 +24,7 @@ const Quiz = (args) => {
         b.push('Anxiety')
     }
     if (a[2][1] === 'true') {
-        b.push('Ptsd')
+        b.push('PTSD')
     }
     if (a[3][1] === 'true') {
         b.push('Schizophrenia')

@@ -6,7 +6,7 @@ import { ADD_QUIZRESULT, ADD_QUIZSET } from "../../utils/mutations";
 
 import { Container, makeStyles, Typography } from '@material-ui/core';
 
-const { depressionQuestions, anxietyQuestions, ptsdQuestions, schQuestions, impairmentQuestions, addictionQuestions } = questionBank;
+const { depressionQuestions, anxietyQuestions, PTSDQuestions, schQuestions, impairmentQuestions, addictionQuestions } = questionBank;
 
 const grader = function () {
     //todo quiz end logic here
@@ -22,8 +22,8 @@ const QuizSet = (props) => {
                 return depressionQuestions
             case 'Anxiety':
                 return anxietyQuestions
-            case 'Ptsd':
-                return ptsdQuestions
+            case 'PTSD':
+                return PTSDQuestions
             case 'Schizophrenia':
                 return schQuestions
             case 'Addiction':

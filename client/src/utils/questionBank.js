@@ -60,7 +60,7 @@ const depressionQuestions = [ // an array of objects depressionQuestions[0].ques
     },
 ] // 8 questions
 
-const ptsdQuestions = [
+const PTSDQuestions = [
     {
         question: "Are you having nightmares about a distressing event(s) or thought about the event(s) when you did not want to?",
         response: responseType.yesNo
@@ -148,7 +148,7 @@ const anxietyQuestions = [  // an array of objects GAD-7
 ]; // 7 questions
 
 const questionBank = {
-    depressionQuestions, anxietyQuestions, ptsdQuestions, schQuestions, impairmentQuestions, addictionQuestions
+    depressionQuestions, anxietyQuestions, PTSDQuestions, schQuestions, impairmentQuestions, addictionQuestions
 }
 
 
