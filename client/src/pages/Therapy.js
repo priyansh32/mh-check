@@ -1,10 +1,3 @@
-/* react page for therapy form 
-
-add new therapy note
-
-see all therapy notes
-
-*/
 import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
@@ -34,6 +27,12 @@ import { Input } from '@mui/material';
 import TherapyNoteList from '../components/TherapyNoteList';
 import TherapyForm from '../components/TherapyForm';
 
+/*
+Therapy module of the Mental Health Test Application
+Created on: 19 September 2022
+Authors: Priyansh Patidar, Chirag R
+Contains the details of the previous therapy so that the user or the attendee can view it.
+*/
 
 function Therapy(props) {
     if (!Auth.loggedIn()) {

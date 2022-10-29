@@ -12,6 +12,13 @@ import HelpCard from "../components/Elements/HelpLineCard";
 
 import { QUERY_QUIZSET } from "../utils/queries";
 
+/*
+Results module of the Mental Health Test Application
+Created on: 19 September 2022
+Authors: Priyansh Patidar, Chirag R
+Displays the result of the attended quiz by the user
+*/
+
 const useStyles = makeStyles((theme) => ({
   container: {
     

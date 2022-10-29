@@ -8,6 +8,12 @@ import Auth from '../utils/auth';
 import HelpCard from '../components/Elements/HelpLineCard';
 import { Typography } from '@mui/material';
 
+/*
+Dashboard module of the Mental Health Test Application
+Created on: 29 September 2022
+Authors: Priyansh Patidar, Chirag R
+Shows the dashboard of the logged-in user, along with the test results
+*/
 
 const useStyles = makeStyles((theme) => ({
 	container: {

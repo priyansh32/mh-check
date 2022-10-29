@@ -9,6 +9,12 @@ import Copyright from '../components/Elements/Copyright';
 //routes
 import { Link } from 'react-router-dom'
 
+/*
+Homepage module of the Mental Health Test Application
+Created on: 15 September 2022
+Authors: Priyansh Patidar, Chirag R
+*/
+
 const useStyles = makeStyles((theme) => ({
     container: {
         // backgroundColor: '#18344A',

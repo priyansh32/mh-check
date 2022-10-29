@@ -22,6 +22,13 @@ import Copyright from '../components/Elements/Copyright';
 
 import { Link } from 'react-router-dom';
 
+/*
+Signup module of the Mental Health Test Application
+Created on: 19 September 2022
+Authors: Priyansh Patidar, Chirag R
+Is used by the user to register oneself on the Mental Health Test application
+*/
+
 const useStyles = makeStyles((theme) => ({
   container: {
     display: 'flex',

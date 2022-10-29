@@ -2,6 +2,12 @@ import React from 'react';
 
 import { Container, Typography, Box } from '@mui/material';
 
+/*
+Legal module of the Mental Health Test Application
+Created on: 18 September 2022
+Authors: Priyansh Patidar, Chirag R
+Displays legal notifications regarding the application to the user
+*/
 
 export default function Legal() {
     // const classes = useStyles();

@@ -23,6 +23,13 @@ import { makeStyles } from '@material-ui/core'
 
 import Copyright from '../components/Elements/Copyright';
 
+/*
+Login module of the Mental Health Test Application
+Created on: 19 September 2022
+Authors: Priyansh Patidar, Chirag R
+Login page for any user to login to the application
+*/
+
 const useStyles = makeStyles((theme) => ({
   container: {
     

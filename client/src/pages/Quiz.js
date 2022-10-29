@@ -5,6 +5,12 @@ import { useParams } from "react-router-dom";
 import QuizSet from '../components/QuizSet'
 import { Container, Typography } from "@mui/material";
 
+/*
+Quiz module of the Mental Health Test Application
+Created on: 19 September 2022
+Authors: Priyansh Patidar, Chirag R
+Contains the quiz details
+*/
 
 // takes an array of quizzes from quiz selector
 const Quiz = (args) => {
