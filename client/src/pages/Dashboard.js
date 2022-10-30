@@ -60,9 +60,8 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     backgroundColor: "#255070",
-    display: "flex",
-    flexDirection: "column",
   },
+
   cardButtons: {
     display: "flex",
     flexDirection: "row",
@@ -71,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   cardTitle: {
-    color: "#f5f5f5",
+    fontWeight: "600",
     fontSize: "2.5rem",
     textAlign: "center",
     [theme.breakpoints.down("md")]: {
@@ -81,7 +80,6 @@ const useStyles = makeStyles((theme) => ({
   cardText: {
     fontSize: "1.3rem",
     textAlign: "center",
-    color: "white",
     [theme.breakpoints.down("md")]: {
       fontSize: "1rem",
     },
@@ -236,7 +234,7 @@ const Dashboard = () => {
       </Typography>
       <Container className={classes.cardContainer}>
         {/* user name */}
-        <Card variant='outlined' className={classes.greet}>
+        <Card variant='outlined' className={classes.card}>
           <CardContent>
             <Typography className={classes.cardTitle}>
               Welcome, {user.name}!
@@ -248,7 +246,7 @@ const Dashboard = () => {
           </CardContent>
         </Card>
         {/* display attendee information */}
-        <Card variant='outlined' className={classes.info}>
+        <Card variant='outlined' className={classes.card}>
           <CardContent>
             <Typography className={classes.cardTitle}>
               Attendee Information
