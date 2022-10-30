@@ -68,6 +68,10 @@ function Signup(props) {
         variables: {
           email: formState.email,
           password: formState.password,
+          name: formState.name,
+          attendeeName: formState.attendeeName,
+          attendeeEmail: formState.attendeeEmail,
+          attendeeRelationship: formState.attendeeRelationship,
         },
       });
 
