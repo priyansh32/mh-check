@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import Auth from '../utils/auth';
-import { ADD_USER } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
+import Auth from "../utils/auth";
+import { ADD_USER } from "../utils/mutations";
 
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { makeStyles } from '@material-ui/core'
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { makeStyles } from "@material-ui/core";
 
-import Copyright from '../components/Elements/Copyright';
+import Copyright from "../components/Elements/Copyright";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 /*
 Signup module of the Mental Health Test Application
@@ -31,12 +31,12 @@ Is used by the user to register oneself on the Mental Health Test application
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    padding: '0, 10px',
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    padding: "0, 10px",
   },
 }));
 
@@ -44,15 +44,20 @@ const theme = createTheme();
 
 function Signup(props) {
   const classes = useStyles();
-  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [formState, setFormState] = useState({
+    email: "",
+    password: "",
+    name: "",
+    attendeeName: "",
+    attendeeEmail: "",
+    attendeeRelationship: "",
+  });
   const [addUser] = useMutation(ADD_USER);
   const [emailState, setEmailState] = useState(false);
   const [passwordState, setPasswordState] = useState(false);
-  const [pwHelper, setPwHelper] = useState('');
-  const [emailHelper, setEmailHelper] = useState('');
+  const [pwHelper, setPwHelper] = useState("");
+  const [emailHelper, setEmailHelper] = useState("");
   const [checked, setChecked] = useState(false);
-
-
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -69,19 +74,18 @@ function Signup(props) {
       const token = mutationResponse.data.addUser.token;
       Auth.login(token);
     } catch (error) {
-      setEmailState(false)
-      setEmailHelper('Email already exists. Please try logging in.')
+      setEmailState(false);
+      setEmailHelper("Email already exists. Please try logging in.");
     }
   };
 
   const handleChangePw = (event) => {
     const { name, value } = event.target;
     if (value.length > 8) {
-      setPasswordState(true)
+      setPasswordState(true);
     } else {
-      setPasswordState(false)
-      setPwHelper('Password must be at least 8 characters.')
-
+      setPasswordState(false);
+      setPwHelper("Password must be at least 8 characters.");
     }
 
     setFormState({
@@ -92,13 +96,23 @@ function Signup(props) {
 
   const handleChangeEmail = (event) => {
     const { name, value } = event.target;
-    const validEmail = new RegExp(/^([a-zA-Z0-9_.-]+)@([\da-zA-Z.-]+)\.([a-zA-Z.]{2,6})$/)
+    const validEmail = new RegExp(
+      /^([a-zA-Z0-9_.-]+)@([\da-zA-Z.-]+)\.([a-zA-Z.]{2,6})$/
+    );
     if (validEmail.test(value)) {
-      setEmailState(true)
+      setEmailState(true);
     } else {
-      setEmailState(false)
-      setEmailHelper('Please enter a valid email')
+      setEmailState(false);
+      setEmailHelper("Please enter a valid email");
     }
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+
+  const handleChangeData = (event) => {
+    const { name, value } = event.target;
     setFormState({
       ...formState,
       [name]: value,
@@ -108,83 +122,146 @@ function Signup(props) {
   return (
     <Container className={classes.container}>
       <ThemeProvider theme={theme}>
-        <Container component="main" maxWidth="xs" sx={{
-          backgroundColor: 'white', marginTop: '100px', marginBottom: '250px',
-        }}>
+        <Container
+          component='main'
+          maxWidth='xs'
+          sx={{
+            backgroundColor: "white",
+            marginTop: "100px",
+            marginBottom: "250px",
+          }}
+        >
           <CssBaseline />
           <Box
             sx={{
               marginTop: 8,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+            <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
               <LockOutlinedIcon />
             </Avatar>
-            <Typography component="h1" variant="h5">
+            <Typography component='h1' variant='h5'>
               Sign up
             </Typography>
 
-            <Box component="form" noValidate onSubmit={handleFormSubmit} sx={{ mt: 1 }}>
+            <Box
+              component='form'
+              noValidate
+              onSubmit={handleFormSubmit}
+              sx={{ mt: 1 }}
+            >
+              {/* add name TextField */}
+              <TextField
+                margin='normal'
+                required
+                fullWidth
+                id='name'
+                label='Name'
+                name='name'
+                autoComplete='name'
+                autoFocus
+                onChange={handleChangeData}
+              />
+
               <TextField
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                id='email'
+                label='Email Address'
+                name='email'
+                autoComplete='email'
                 onChange={handleChangeEmail}
                 error={!emailState}
                 helperText={emailHelper}
-                margin="normal"
+                margin='normal'
               />
               <TextField
-                margin="normal"
+                margin='normal'
                 required
                 fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="new-password"
+                name='password'
+                label='Password'
+                type='password'
+                id='password'
+                autoComplete='new-password'
                 onChange={handleChangePw}
                 error={!passwordState}
                 helperText={pwHelper}
+              />
+              {/* add Attendee Name */}
+              <TextField
+                margin='normal'
+                required
+                fullWidth
+                name='attendeeName'
+                label='Attendee Name'
+                type='attendeeName'
+                id='attendeeName'
+                autoComplete='attendeeName'
+                onChange={handleChangeAttendeeName}
+                error={!attendeeNameState}
+                helperText={attendeeNameHelper}
+              />
+              {/* add Attendee Email */}
+              <TextField
+                margin='normal'
+                required
+                fullWidth
+                name='attendeeEmail'
+                label='Attendee Email'
+                type='attendeeEmail'
+                id='attendeeEmail'
+                autoComplete='attendeeEmail'
+                onChange={handleChangeEmail}
+                error={!emailState}
+                helperText={emailHelper}
+              />
+              {/* add Attendee Relationship */}
+              <TextField
+                margin='normal'
+                required
+                fullWidth
+                name='attendeeRelationship'
+                label='Attendee Relationship'
+                type='attendeeRelationship'
+                id='attendeeRelationship'
+                autoComplete='attendeeRelationship'
+                onChange={handleChangeData}
               />
 
               <Link to='/legal'>Terms</Link>
 
               <FormControlLabel
-                control={<Checkbox value="legal" color="primary" />}
-                label="I confirm that I have read the legal documents and agree to the terms."
+                control={<Checkbox value='legal' color='primary' />}
+                label='I confirm that I have read the legal documents and agree to the terms.'
                 checked={checked}
                 onChange={() => setChecked(!checked)}
               />
               <Button
-                type="submit"
+                type='submit'
                 fullWidth
-                variant="contained"
+                variant='contained'
                 sx={{ mt: 3, mb: 2 }}
                 disabled={!(emailState && passwordState && checked)}
               >
                 Sign Up
               </Button>
-              <Grid container justifyContent="flex-end">
+              <Grid container justifyContent='flex-end'>
                 <Grid item>
-                  <Link to="/login" variant="body2">
+                  <Link to='/login' variant='body2'>
                     Already have an account? Log in
                   </Link>
                 </Grid>
               </Grid>
-
             </Box>
           </Box>
           <Copyright sx={{ mt: 5 }} />
         </Container>
       </ThemeProvider>
     </Container>
-  )
+  );
 }
 export default Signup;
