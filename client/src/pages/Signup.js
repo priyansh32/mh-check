@@ -201,9 +201,7 @@ function Signup(props) {
                 type='attendeeName'
                 id='attendeeName'
                 autoComplete='attendeeName'
-                onChange={handleChangeAttendeeName}
-                error={!attendeeNameState}
-                helperText={attendeeNameHelper}
+                onChange={handleChangeData}
               />
               {/* add Attendee Email */}
               <TextField
