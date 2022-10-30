@@ -236,14 +236,31 @@ const Dashboard = () => {
       </Typography>
       <Container className={classes.cardContainer}>
         {/* user name */}
-        <Card className={classes.card}>
+        <Card variant='outlined' className={classes.greet}>
           <CardContent>
             <Typography className={classes.cardTitle}>
-              Welcome, {user.firstName}!
+              Welcome, {user.name}!
             </Typography>
             <Typography className={classes.cardText}>
               Here you can view your results from previous quizzes and take new
               quizzes.
+            </Typography>
+          </CardContent>
+        </Card>
+        {/* display attendee information */}
+        <Card variant='outlined' className={classes.info}>
+          <CardContent>
+            <Typography className={classes.cardTitle}>
+              Attendee Information
+            </Typography>
+            <Typography className={classes.cardText}>
+              {user.attendeeName}
+            </Typography>
+            <Typography className={classes.cardText}>
+              {user.attendeeEmail}
+            </Typography>
+            <Typography className={classes.cardText}>
+              {user.attendeeRelationship}
             </Typography>
           </CardContent>
         </Card>
