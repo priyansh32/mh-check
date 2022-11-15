@@ -3,6 +3,7 @@
 ## Description
 
 A mental health quiz app that helps users track their mental health condition using a test. Mental Health Test tests users with multiple questions to help users understand and identify their feelings. The application uses a React.js front-end, backend application uses NodeJS with expressjs framework and MongoDB database.
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -25,11 +26,13 @@ Mental Health Test is a quiz app that helps users identify their feelings and di
 
 `npm install`
 
+`npm run build`
+
 ## Usage
 
-`npm run develop`
+`npm start`
 
 ## Made By:
 
 [Priyansh32](https://github.com/priyansh32) - Priyansh  
-[chiragr09](https://github.com/chiragr09) - Chirag R  
+[chiragr09](https://github.com/chiragr09) - Chirag R
